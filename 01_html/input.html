@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select name="menu" id="">
+      <optgroup label="coffee">
+        <option value="americano">아메리카노</option>
+        <option value="latte">라떼</option>
+        <option value="cappuccino" disabled>카푸치노</option>
+      </optgroup>
+      <optgroup label="other">
+        <option value="lemonade" selected>레모네이드</option>
+        <option value="hot chocolate">핫초코</option>
+      </optgroup>
+    </select>
+    <!-- placehorder 는 처음 아메리카노로 되어있음 selected를 해주면 레모네이드가 초기값임-->
+    <br />
+    <input type="button" value="클릭" />
+    <button>클릭</button>
+    <!-- 버튼은 두가지 방식으로 만들 수 있음 -->
+    <br />
+    <input type="text" placeholder="잠깐 보이는 친구" />
+    <br />
+    <input type="password" placeholder="비밀번호" />
+    <br />
+    <input type="checkbox" name="menu" value="coffee" />커피
+    <input type="checkbox" name="menu" value="tea" />차
+    <input type="checkbox" name="menu" value="smoothie" checked />스무디
+    <!-- checkbox는 name이 같은애들끼리 묶임 -->
+    <br />
+    <input type="radio" name="flash" value="t" />T 점멸
+    <input type="radio" name="flash" value="f" />F 점멸
+    <input type="radio" name="flash" value="d" checked />D 점멸
+    <!-- radio도 name끼리 묶임  -->
+    <br />
+    <input type="date" name="date" />
+    <br />
+    <input type="datetime-local" name="datetime" />
+    <!-- os기준으로 시간을 제공해서 datetime가 아닌 datetime-local로 써주기 -->
+    <input type="color" />
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1>호로록 카페</h1>
+      <p>
+        주문자 이름을 입력하세요
+        <input type="text" placeholder="이름을 입력하세요" />
+      </p>
+      <hr />
+    </header>
+    <div id="groupOrder">
+      <h2>단체주문</h2>
+      <input type="checkbox" name="many" value="coffee" />커피
+      <input type="checkbox" name="many" value="tea" />차
+      <input type="checkbox" name="many" value="latte" />라떼
+      <p>주문날짜 입력</p>
+      <input type="date" />
+      <br />
+      <!-- input 태그가 인라인요소라서 br이 안먹은것 -->
+      <hr />
+    </div>
+    <div id="individualOrder">
+      <h2>개별 주문</h2>
+      <input type="radio" name="one" value="coffee" />커피
+      <input type="radio" name="one" value="tea" />차
+      <input type="radio" name="one" value="latte" />라떼
+      <p>주문날짜 및 시간 입력</p>
+      <input type="datetime-local" />
+      <br />
+      <br />
+      <hr />
+    </div>
+  </body>
+</html>

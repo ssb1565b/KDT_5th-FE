@@ -1,0 +1,7 @@
+{
+  "hi": {
+    "text": "TEXT",
+    "img": "src",
+    "info": [{ "name": "subin", "age": 26 }]
+  }
+}
