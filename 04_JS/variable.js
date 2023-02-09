@@ -1,4 +1,4 @@
-let num = 10;
+const num = 10;
 num = 10 + 5;
 console.log(num);
 
