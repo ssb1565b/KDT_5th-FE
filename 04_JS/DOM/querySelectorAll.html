@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">9</div>
+    <div class="box">10</div>
+  </body>
+  <script>
+    const boxEls = document.querySelectorAll(".box");
+    console.log(boxEls);
+
+    // foreach : 배열의 각각 요소에게 명령을 반복적으로 실행함
+
+    boxEls.forEach(function (el, index) {
+      console.log("el :", el, "index :", index);
+      //boxEl : 첫번쨰 매개변수에는 value 값이 들어오고, Index : 두번째 매개변수에는 Index 숫자가 들어옴
+
+      el.classList.add(`bod_${index + 1}`);
+    });
+
+    // for 문으로도 동일하게 가능
+    for (let i = 0; i < boxEls.length; i++) {
+      boxEls[i].classList.add(`bod_${index + 1}`);
+    }
+  </script>
+</html>

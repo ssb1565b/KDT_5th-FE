@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box">box</div>
+    <input type="text" />
+
+    <div class="div1">div1</div>
+    <div class="div2">div2</div>
+  </body>
+  <script>
+    const boxEl = document.querySelector(".box");
+    const inputEl = document.querySelector("input");
+
+    // ======setAttribute : 안에 속성을 바꾸고싶을때 사용
+    boxEl.setAttribute("style", "background-color:orange");
+    inputEl.setAttribute("placeholder", "통합검색");
+    boxEl.setAttribute("style", "background-color:orange;height:300px");
+    // 속성이 교체되는 개념임으로 위에서 스타일을 준것이 있다면 중복으로 주어야 적용이됨
+
+    // ======textContent : 안에 내용을 바꾸고싶을때 사용
+    console.log(boxEl.textContent);
+    // 해당요소에 들어있는 값을 가져옴
+
+    boxEl.textContent = "KDT";
+    console.log(boxEl.textContent);
+
+    // =====innerText , innerHtml
+    const divOneEl = document.querySelector(".div1");
+    const divTwoEl = document.querySelector(".div2");
+
+    divOneEl.innerHTML = "<button>test</button>";
+    divTwoEl.innerText = "<button>test</button>";
+  </script>
+</html>

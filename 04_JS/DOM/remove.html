@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>1</li>
+      <li class="list">2</li>
+      <li class="remove">3</li>
+      <li>4</li>
+    </ul>
+  </body>
+  <script>
+    const removeEl = document.querySelector(".remove");
+    removeEl.remove();
+
+    const listEl = document.querySelector(".list");
+    console.log(listEl.parentNode);
+    // 부모님 모시고와라! 이 의미
+
+    const ulEl = document.querySelector("ul");
+    console.log(ulEl.childNodes);
+    // ---> NodeList(8) [text, li, text, li.list, text, text, li, text]
+    // 첫번째 줄바꿈값이 들어가있는데 이를 text로 보여줌  값을 까보면 textContent:"\n      " 로 나와있음 이게 엔터값
+    // 만약 node만 가져오고 싶다면? 아래확인
+
+    console.log(ulEl.children);
+    // ----> HTMLCollection(3) [li, li.list, li]
+  </script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .orange {
+        background-color: orange;
+      }
+      .skyblue {
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">1</div>
+    <div class="box2" onclick="changeColor()">2</div>
+  </body>
+  <script>
+    const boxOne = document.querySelector(".box1");
+    const boxTwo = document.querySelector(".box2");
+
+    function checkColor() {
+      if (boxOne.classList.contains("orange")) {
+        boxOne.classList.add("skyblue");
+        boxOne.classList.remove("orange");
+      } else {
+        boxOne.classList.add("orange");
+        boxOne.classList.remove("skyblue");
+      }
+    }
+    function changeColor() {
+      if (boxTwo.classList.contains("orange")) {
+        boxTwo.classList.add("skyblue");
+        boxTwo.classList.remove("orange");
+      } else {
+        boxTwo.classList.add("orange");
+        boxTwo.classList.remove("skyblue");
+      }
+    }
+
+    boxOne.addEventListener("click", checkColor);
+    // 함수를 정의하고 전달할떄는 ()를 뺴주어야함.
+    // 여기서 ()를 주면 바로 호출하게됨
+  </script>
+</html>

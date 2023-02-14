@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li onclick="deleteThis(this)">1 삭제</li>
+      <li onclick="deleteThis(this)">2 삭제</li>
+      <li onclick="showThis(this)">3</li>
+      <li onclick="showThis(this)">4</li>
+    </ul>
+    <ul>
+      <li class="list">1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+  </body>
+  <script>
+    function showThis(t) {
+      console.log(t);
+      // -----> <li onclick="showThis(this)">1</li> 를 반환
+      // 즉 자기자신 node를 전달함
+    }
+
+    function deleteThis(t) {
+      console.log(t);
+      t.remove();
+      // remove()는 node를 찢어.... 만약 window한테 주면 body가 지워짐
+    }
+
+    const listEl = document.querySelector(".list");
+    listEl.addEventListener("click", function (e) {
+      console.log(e.target);
+      e.target.remove();
+    });
+    // 브라우저는 event객체에 내가 동작하는것들을 다 기록하고 있음
+  </script>
+</html>
