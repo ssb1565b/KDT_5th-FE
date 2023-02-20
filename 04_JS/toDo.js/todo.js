@@ -20,6 +20,10 @@ function addList() {
     checkBtn.addEventListener("click", function (e) {
       checkBtn.checked &&
         p.setAttribute("style", "text-decoration: line-through;");
+
+      checkBtn.checked
+        ? p.setAttribute("style", "text-decoration: line-through;")
+        : p.setAttribute("style", "text-decoration: none;");
     });
     deleteBtn.addEventListener("click", function () {
       deleteBtn.parentNode.remove();
