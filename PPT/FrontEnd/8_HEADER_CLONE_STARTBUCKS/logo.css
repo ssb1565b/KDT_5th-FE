@@ -1,0 +1,122 @@
+/* COMMON */
+a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+header {
+  box-shadow: 0 2px 4px 0 rgba(207, 207, 207, 0.5);
+  display: flex;
+  justify-content: center;
+}
+
+.inner {
+  width: 1200px;
+  height: 64px;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .inner .header__logo {
+  height: 32px;
+  flex-shrink: 0;
+}
+
+header .inner .header__logo a {
+  font-family: "Indie Flower", cursive;
+  font-size: 32px;
+  color: green;
+}
+
+header .inner .header__logo a i {
+  font-size: 32px;
+  color: green;
+}
+
+header .inner .header__menu {
+  display: flex;
+  font-size: 16px;
+  height: 32px;
+  flex-shrink: 0;
+  padding: 0 20px;
+}
+
+header .inner .header__menu li {
+  padding: 8px 16px;
+}
+
+header .inner .header__menu li a:hover {
+  color: #1dc078;
+}
+
+header .inner .header__space {
+  flex-grow: 1;
+}
+
+header .inner .header__search {
+  position: relative;
+  height: 36px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+header .inner .header__search input {
+  box-sizing: border-box;
+  width: 148px;
+  height: 36px;
+  padding: 5px 9px;
+  font-size: 16px;
+  color: gray;
+  background-color: #f6f6f6;
+  border-radius: 3px;
+  border: none;
+}
+
+header .inner .header__search input:hover {
+  border: 1px solid #c8c8c8;
+}
+
+header .inner .header__search input:focus {
+  border: 1px solid #c8c8c8;
+  outline: none;
+  box-shadow: inset 0px 0px 0px 2px #1dc078;
+}
+
+header .inner .header__search i {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 16px;
+  height: 16px;
+  right: 9px;
+  /* transform: translateX(-30px); */
+}
+
+header .inner .header__login-join {
+  height: 34px;
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+header .inner .header__login-join .btn {
+  height: 34px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+header .inner .header__login-join .btn.btn--login {
+  color: #4a4a4a;
+  background-color: white;
+}
+
+header .inner .header__login-join .btn.btn--register {
+  color: white;
+  background-color: #f77867;
+}

@@ -1,0 +1,153 @@
+/* COMMON */
+body {
+}
+
+a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+header {
+  box-shadow: 0 2px 4px 0 hsl(0deg 0% 81% / 50%);
+}
+
+header .inner {
+  width: 1200px;
+  height: 64px;
+  padding: 0 32px;
+  margin: auto;
+  display: flex;
+  position: relative;
+}
+
+header .inner .header__logo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 32px;
+}
+
+header .inner .header__logo a {
+  font-family: "Indie Flower", cursive;
+  font-size: 32px;
+  color: green;
+}
+
+header .inner .header__logo a i {
+  font-size: 32px;
+  color: green;
+}
+
+header .inner .header__menu {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 16px;
+  height: 32px;
+  left: 200px;
+}
+
+header .inner .header__menu li {
+  padding: 8px 16px;
+}
+
+header .inner .header__menu li a:hover {
+  color: #1dc078;
+}
+
+header .inner .header__search {
+  position: absolute;
+  right: 350px;
+  height: 36px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+header .inner .header__search input {
+  box-sizing: border-box;
+  width: 148px;
+  height: 36px;
+  padding: 5px 9px;
+  font-size: 16px;
+  color: gray;
+  background-color: #f6f6f6;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+
+header .inner .header__search input:hover {
+  border: 1px solid #c8c8c8;
+}
+
+header .inner .header__search input:focus {
+  border: 1px solid #c8c8c8;
+  outline: none;
+  box-shadow: inset 0px 0px 0 2px #1dc078;
+}
+
+header .inner .header__search i {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 16px;
+  height: 16px;
+  right: 9px;
+}
+
+header .inner .header__participation {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 16px;
+  margin: auto;
+  right: 210px;
+  padding: 8px 16px;
+}
+
+header .inner .header__participation a {
+}
+
+header .inner .header__participation a:hover {
+  color: #1dc078;
+}
+
+header .inner .header__login-join {
+  position: absolute;
+  right: 32px;
+  height: 34px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  width: 160px;
+  justify-content: space-between;
+}
+
+header .inner .header__login-join:hover {
+  cursor: pointer;
+}
+
+header .inner .header__login-join .btn {
+  height: 34px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 3px;
+  color: #4a4a4a;
+  background-color: white;
+}
+
+header .inner .header__login-join .btn.btn--register {
+  height: 34px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 3px;
+  color: white;
+  background-color: #f77867;
+}
